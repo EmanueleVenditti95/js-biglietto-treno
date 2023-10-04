@@ -40,10 +40,10 @@ console.log(discountSenior)
 
 if (userAge < 18){   
     //     - SE l'età dell'utente è < 18 anni, applicare lo sconto Junior
-    userPrice = userPrice - discountJunior
+    userPrice = (userPrice - discountJunior).toFixed(2)
 } else if (userAge > 65) {  
      //     - ALTRIMENTI SE l'età dell'utente è > 65 anni,applicare lo sconto Senior 
-    userPrice = userPrice - discountSenior
+    userPrice = (userPrice - discountSenior).toFixed(2)
 }
 //     - ALTRIMENTI non applicare nessuno sconto
 
